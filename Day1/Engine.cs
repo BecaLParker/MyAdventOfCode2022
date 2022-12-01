@@ -4,6 +4,6 @@ public class Engine
 {
     public int MostCalories(IEnumerable<Elf> elves)
     {
-        return 1;
+        return elves.Any() ? 1 : 0;
     }
 }

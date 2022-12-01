@@ -23,4 +23,18 @@ public class EngineTests
         //Assert
         result.Should().Be(1);
     }
+
+    [Test]
+    public void MostCalories_NoElves_ShouldReturnZero()
+    {
+        //Arrange
+        var noElves = new List<Elf>();
+        var engine = new Engine();
+
+        //Act
+        var result = engine.MostCalories(noElves);
+
+        //Assert
+        result.Should().Be(0);
+    }
 }
