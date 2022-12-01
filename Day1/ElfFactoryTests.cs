@@ -26,7 +26,7 @@ public class ElfFactoryTests
     }
 
     [Test]
-    public void Method_Scenario_ExpectedBehaviour()
+    public void HackToFirstStar()
     {
         //Arrange
         var factory = new ElfFactory();
@@ -40,4 +40,21 @@ public class ElfFactoryTests
         //Assert
         answer.Should().Be(74198);
     }
+    
+    [Test]
+    public void HackToSecondStar()
+    {
+        //Arrange
+        var factory = new ElfFactory();
+        string day1InputPath = @"C:\AdventOfCode2022\Day1\input.txt";
+        var elves = factory.Create(day1InputPath);
+        var engine = new Engine();
+        
+        //Act
+        var answer = engine.CaloriesFromTopThree(elves);
+        
+        //Assert
+        answer.Should().Be(209914);
+    }
+
 }

@@ -51,4 +51,21 @@ public class EngineTests
         //Assert
         result.Should().Be(0);
     }
+
+    [Test]
+    public void TopThree_OnlyThreeElves_ShouldReturnTotalOfThoseElves()
+    {
+        //Arrange
+        var testElf1 = new Elf(new List<int>(){1});
+        var testElf2 = new Elf(new List<int>(){2});
+        var testElf3 = new Elf(new List<int>(){3});
+        var elves = new List<Elf>() { testElf1, testElf2, testElf3 };
+        var engine = new Engine();
+
+        //Act
+        var result = engine.CaloriesFromTopThree(elves);
+
+        //Assert
+        result.Should().Be(6);
+    }
 }

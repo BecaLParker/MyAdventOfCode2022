@@ -1,4 +1,4 @@
-﻿namespace Day1;
+namespace Day1;
 
 public class ElfFactory
 {
@@ -23,6 +23,7 @@ public class ElfFactory
                     elfInProgress.AddSnack(snack);
                 }
             }
+            
             
         }
         
