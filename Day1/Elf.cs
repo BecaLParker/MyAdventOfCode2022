@@ -2,9 +2,13 @@
 
 public class Elf
 {
-    private int[] _snacks;
-    public Elf(int[] snacks)
+    private List<int> _snacks;
+    public Elf(List<int> snacks)
     {
         _snacks = snacks;
+    }
+    public int TotalCalories()
+    {
+        return _snacks.Sum();
     }
 }
