@@ -11,4 +11,8 @@ public class Elf
     {
         return _snacks.Sum();
     }
+    public void AddSnack(int snack)
+    {
+        _snacks.Add(snack);
+    }
 }
