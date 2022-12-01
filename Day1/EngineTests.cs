@@ -2,7 +2,7 @@ using FluentAssertions;
 
 namespace Day1;
 
-public class Tests
+public class EngineTests
 {
     [SetUp]
     public void Setup()
@@ -22,22 +22,5 @@ public class Tests
 
         //Assert
         result.Should().Be(1);
-    }
-}
-
-public class Engine
-{
-    public int MostCalories(IEnumerable<Elf> elves)
-    {
-        return 1;
-    }
-}
-
-public class Elf
-{
-    private int[] _snacks;
-    public Elf(int[] snacks)
-    {
-        _snacks = snacks;
     }
 }
