@@ -68,6 +68,21 @@ public class ScorerTests
         result.Should().Be(15);
     }
 
+    [Test]
+    public void HackToDay2PartOne()
+    {
+        //Arrange
+        string day2InputPath = @"C:\AdventOfCode2022\Day2\Day2Input.txt";
+        var lines = File.ReadAllText(day2InputPath).Split(Environment.NewLine);
+        var calculator = new Scorer();
+        
+        //Act
+        var answer = calculator.CalculateGameScore(lines);
+        
+        //Assert
+        answer.Should().Be(9759);
+    }
+
 
 
     
