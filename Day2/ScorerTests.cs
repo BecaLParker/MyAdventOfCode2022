@@ -17,21 +17,21 @@ public class ScorerTests
         var calculator = new Scorer();
 
         //Act
-        var result = calculator.CalculateRoundScore(roundInput);
+        var result = calculator.CalculateRoundScore(roundInput, true);
         
         //Assert
         result.Should().Be(1);
     }
     
     [Test]
-    public void CalculateRoundScore_ZvsC_ShouldReturn6()
+    public void CalculateRoundScore_CvsZ_ShouldReturn6()
     {
         //Arrange
-        var roundInput = "Z C";
+        var roundInput = "C Z";
         var calculator = new Scorer();
 
         //Act
-        var result = calculator.CalculateRoundScore(roundInput);
+        var result = calculator.CalculateRoundScore(roundInput, true);
         
         //Assert
         result.Should().Be(6);
@@ -45,7 +45,7 @@ public class ScorerTests
         var calculator = new Scorer();
 
         //Act
-        var result = calculator.CalculateRoundScore(roundInput);
+        var result = calculator.CalculateRoundScore(roundInput, true);
         
         //Assert
         result.Should().Be(8);
@@ -62,14 +62,15 @@ public class ScorerTests
         var calculator = new Scorer();
 
         //Act
-        var result = calculator.CalculateGameScore(gameInput);
+        var result = calculator.CalculateGameScore(gameInput, true);
         
         //Assert
         result.Should().Be(15);
     }
 
+
     [Test]
-    public void HackToDay2PartOne()
+    public void HackToDay2PartTwo()
     {
         //Arrange
         string day2InputPath = @"C:\AdventOfCode2022\Day2\Day2Input.txt";
@@ -77,10 +78,10 @@ public class ScorerTests
         var calculator = new Scorer();
         
         //Act
-        var answer = calculator.CalculateGameScore(lines);
+        var answer = calculator.CalculateGameScore(lines, false);
         
         //Assert
-        answer.Should().Be(9759);
+        answer.Should().Be(12429);
     }
 
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48024bbb-845b-41da-b763-4b53984c32c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Day2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Day2/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Day2/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Day2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Day2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scorer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScorerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ScorerTests.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IM75JzbR04OWwcaBwdQjRdCg1N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="afe33764-e935-4437-91ad-6b60d34acbd4" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48024bbb-845b-41da-b763-4b53984c32c7" name="Changes" comment="" />
+      <created>1669979413865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669979413865</updated>
+      <workItem from="1669979429944" duration="1866000" />
+      <workItem from="1669992180307" duration="618000" />
+      <workItem from="1669993304571" duration="356000" />
+    </task>
+    <task id="LOCAL-00001" summary="Day2 BvX =&gt; 1">
+      <created>1669991591681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669991591681</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day2 ZvC =&gt; 6">
+      <created>1669991890098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669991890098</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Day2 AvY =&gt; 1">
+      <created>1669992022459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669992022459</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Day2 rounds1to3 =&gt; 15">
+      <created>1669992745548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669992745548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Day2 BvX =&gt; 1" />
+    <MESSAGE value="Day2 ZvC =&gt; 6" />
+    <MESSAGE value="Day2 AvY =&gt; 1" />
+    <MESSAGE value="Day2 rounds1to3 =&gt; 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day2 rounds1to3 =&gt; 15" />
+  </component>
+</project>
