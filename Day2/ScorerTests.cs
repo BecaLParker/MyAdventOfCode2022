@@ -36,6 +36,22 @@ public class ScorerTests
         //Assert
         result.Should().Be(6);
     }
+    
+    [Test]
+    public void CalculateScore_AvsY_ShouldReturn8()
+    {
+        //Arrange
+        var roundInput = "A Y";
+        var calculator = new Scorer();
+
+        //Act
+        var result = calculator.CalculateScore(roundInput);
+        
+        //Assert
+        result.Should().Be(8);
+    }
+
+
 
     
 }

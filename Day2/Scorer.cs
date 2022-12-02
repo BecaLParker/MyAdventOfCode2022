@@ -12,6 +12,9 @@ public class Scorer
             case "Z C":
                 return 6;
                 break;
+            case "A Y":
+                return 8;
+                break;
             default:
                 return 0;
                 break;
