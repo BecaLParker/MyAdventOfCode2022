@@ -2,7 +2,7 @@ namespace Day2;
 
 public class Scorer
 {
-    public int CalculateScore(string input)
+    public int CalculateRoundScore(string input)
     {
         switch (input)
         {
@@ -20,5 +20,17 @@ public class Scorer
                 break;
         }
         
+    }
+
+    public int CalculateGameScore(List<string> gameInput)
+    {
+        int total = 0;
+        
+        foreach (var round in gameInput)
+        { 
+            total += CalculateRoundScore(round);
+        }
+
+        return total;
     }
 }
