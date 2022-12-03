@@ -93,4 +93,14 @@ public class Tests
         //Assert
         result.Should().Be(157);
     }
+
+    [Test]
+    public void GetDay3FirstStar()
+    {
+        string day3InputPath = @"C:\AdventOfCode2022\Day3\Day3Input.txt";
+        var bags = File.ReadAllText(day3InputPath).Split(Environment.NewLine);
+        var app = new App();
+
+        Console.WriteLine(app.PrioritySum(bags));
+    }
 }
