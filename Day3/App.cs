@@ -22,4 +22,9 @@ public class App
             return character - 38;
         }
     }
+
+    public int PrioritySum(IEnumerable<string> bags)
+    {
+        return bags.Select(bag => ItemPriority(SearchBag(bag))).Sum();
+    }
 }

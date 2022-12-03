@@ -71,4 +71,26 @@ public class Tests
         item5Result.Should().Be(20);
         item6Result.Should().Be(19);
     }
+
+    [Test]
+    public void PrioritySumForThe6TestBagsShouldReturn157()
+    {
+        //Arrange
+        var sixTestBags = new string[6]
+        {
+            "vJrwpWtwJgWrhcsFMMfFFhFp", 
+            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL", 
+            "PmmdzqPrVvPwwTWBwg", 
+            "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn", 
+            "ttgJtRGJQctTZtZT",
+            "CrZsJsPPZsGzwwsLwLmpwMDw"
+        };
+        var app = new App();
+
+        //Act
+        var result = app.PrioritySum(sixTestBags);
+        
+        //Assert
+        result.Should().Be(157);
+    }
 }
