@@ -57,7 +57,7 @@ public class ScorerTests
         //Arrange
         var gameInput = new List<string>()
         {
-            "B X", "Z C", "A Y"
+            "B X", "C Z", "A Y"
         };
         var calculator = new Scorer();
 
