@@ -27,4 +27,38 @@ public class App
     {
         return bags.Select(bag => ItemPriority(SearchBag(bag))).Sum();
     }
+
+    public int BadgePrioritySum(IEnumerable<string> bags)
+    {
+        var groups = SplitIntoGroupsOfThree(bags);
+        var badges = new List<string>();
+        foreach (var group in groups)
+        {
+            var groupBagsAsListsOfChar = new List<List<char>>();
+            foreach (var bag in group)
+            {
+                List<char> bagAsListOfChar = new List<char>();
+                bagAsListOfChar.AddRange(bag);
+                groupBagsAsListsOfChar.Add(bagAsListOfChar);
+            }
+
+            badges.Add(groupBagsAsListsOfChar[0].Intersect(groupBagsAsListsOfChar[1]).Intersect(groupBagsAsListsOfChar[2]).First().ToString()); 
+        }
+
+        var prioritySum = 0;
+        foreach (var badge in badges)
+        {
+            prioritySum += ItemPriority(badge);
+        }
+
+        return prioritySum;
+    }
+    public static List<List<T>> SplitIntoGroupsOfThree<T>(IEnumerable<T> source)
+    {
+        return  source
+            .Select((x, i) => new { Index = i, Value = x })
+            .GroupBy(x => x.Index / 3)
+            .Select(x => x.Select(v => v.Value).ToList())
+            .ToList();
+    }
 }
