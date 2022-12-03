@@ -48,15 +48,27 @@ public class Tests
         //Arrange
         var bag1Item = "p";
         var bag2Item = "L";
+        var bag3Item = "P";
+        var bag4Item = "v";
+        var bag5Item = "t";
+        var bag6Item = "s";
         
         var app = new App();
 
         //Act
         var item1Result = app.ItemPriority(bag1Item);
         var item2Result = app.ItemPriority(bag2Item);
+        var item3Result = app.ItemPriority(bag3Item);
+        var item4Result = app.ItemPriority(bag4Item);
+        var item5Result = app.ItemPriority(bag5Item);
+        var item6Result = app.ItemPriority(bag6Item);
 
         //Assert
         item1Result.Should().Be(16, "Lowercase item types a through z have priorities 1 through 26.");
         item2Result.Should().Be(38, "Uppercase item types A through Z have priorities 27 through 52.");
+        item3Result.Should().Be(42);
+        item4Result.Should().Be(22);
+        item5Result.Should().Be(20);
+        item6Result.Should().Be(19);
     }
 }
