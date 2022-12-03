@@ -12,6 +12,14 @@ public class App
 
     public int ItemPriority(string item)
     {
-        return 16;
+        var character = item[0];
+        if (Char.IsLower(character))
+        {
+            return character - 96;
+        }
+        else
+        {
+            return character - 38;
+        }
     }
 }
