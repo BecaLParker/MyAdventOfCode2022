@@ -40,4 +40,18 @@ public class Tests
         bag5Result.Should().Be("t");
         bag6Result.Should().Be("s");
     }
+
+    [Test]
+    public void ItemPriorityShouldReturnCorrectValue()
+    {
+        //Arrange
+        var bag1Item = "p";
+        var app = new App();
+
+        //Act
+        var result = app.ItemPriority(bag1Item);
+
+        //Assert
+        result.Should().Be(16);
+    }
 }

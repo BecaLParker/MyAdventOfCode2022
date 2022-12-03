@@ -9,4 +9,9 @@ public class App
         
         return firstCompartment.Intersect(secondCompartment).First().ToString();
     }
+
+    public int ItemPriority(string item)
+    {
+        return 16;
+    }
 }
