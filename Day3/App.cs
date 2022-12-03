@@ -53,7 +53,8 @@ public class App
 
         return prioritySum;
     }
-    public static List<List<T>> SplitIntoGroupsOfThree<T>(IEnumerable<T> source)
+
+    private static List<List<T>> SplitIntoGroupsOfThree<T>(IEnumerable<T> source)
     {
         return  source
             .Select((x, i) => new { Index = i, Value = x })
