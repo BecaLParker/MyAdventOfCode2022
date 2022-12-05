@@ -8,7 +8,7 @@ namespace Day4
 
         internal bool IsFullyContained(string pair)
         {
-            //populate the arrays
+            //populate the lists
             var split = pair.Split(",");
             var aStart = Int32.Parse(split[0].Split("-")[0]);
             var aEnd = Int32.Parse(split[0].Split("-")[1]);
@@ -19,7 +19,7 @@ namespace Day4
 
             //return whether one contains the other
             bool answer = a.All(x => b.Any(y => x == y));
-            if (answer == true)
+            if (answer)
             {
                 return answer;
             }
@@ -29,6 +29,21 @@ namespace Day4
             }
 
             return answer;
+        }
+
+        public int CheckAllPairs(string input)
+        {
+            var pairs = input.Split(Environment.NewLine);
+            var total = 0;
+            foreach (var pair in pairs)
+            {
+                if (IsFullyContained(pair))
+                {
+                    total += 1;
+                }
+            }
+
+            return total;
         }
     }
 }
