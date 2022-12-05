@@ -72,4 +72,19 @@ public class RangeCheckerTests
         result.Should().Be(2);
     }
 
+    [Test]
+    public void Get3FirstStar()
+    {
+        //Arrange
+        string day4InputPath = @"C:\AdventOfCode2022\Day4\Day4Input.txt";
+        var input = File.ReadAllText(day4InputPath);
+        var rangeChecker = new RangeChecker();
+        
+        //Act
+        Console.WriteLine(rangeChecker.CheckAllPairs(input));
+        
+        //Assert
+        
+    }
+
 }
