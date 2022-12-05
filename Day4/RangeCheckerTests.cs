@@ -66,7 +66,7 @@ public class RangeCheckerTests
 
         
         //Act
-        var result = rangeChecker.CheckAllPairs(testInput);
+        var result = rangeChecker.CheckAllPairs(testInput, true);
         
         //Assert
         result.Should().Be(2);
@@ -81,10 +81,26 @@ public class RangeCheckerTests
         var rangeChecker = new RangeChecker();
         
         //Act
-        Console.WriteLine(rangeChecker.CheckAllPairs(input));
+        Console.WriteLine(rangeChecker.CheckAllPairs(input, true));
         
         //Assert
         
     }
+    
+    [Test]
+    public void Get3SecondStar()
+    {
+        //Arrange
+        string day4InputPath = @"C:\AdventOfCode2022\Day4\Day4Input.txt";
+        var input = File.ReadAllText(day4InputPath);
+        var rangeChecker = new RangeChecker();
+        
+        //Act
+        Console.WriteLine(rangeChecker.CheckAllPairs(input, false));
+        
+        //Assert
+        
+    }
+
 
 }
