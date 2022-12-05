@@ -22,4 +22,18 @@ public class RangeCheckerTests
         //Assert
         result.Should().Be(false);
     }
+    
+    [Test]
+    public void IsFullyContained_PartiallyOverlappingPair_ShouldReturnFalse()
+    {
+        //Arrange
+        var partiallyOverlappingPair = "5-7,7-9";
+        var rangeChecker = new RangeChecker();
+
+        //Act
+        var result = rangeChecker.IsFullyContained(partiallyOverlappingPair);
+
+        //Assert
+        result.Should().Be(false);
+    }
 }
