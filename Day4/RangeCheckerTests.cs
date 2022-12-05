@@ -36,4 +36,19 @@ public class RangeCheckerTests
         //Assert
         result.Should().Be(false);
     }
+    
+    [Test]
+    public void IsFullyContained_FullyOverlappingPair_ShouldReturnTrue()
+    {
+        //Arrange
+        var fullyOverlappingPair = "2-8,3-7";
+        var rangeChecker = new RangeChecker();
+
+        //Act
+        var result = rangeChecker.IsFullyContained(fullyOverlappingPair);
+
+        //Assert
+        result.Should().Be(true);
+    }
+
 }
