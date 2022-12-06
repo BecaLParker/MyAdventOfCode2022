@@ -1,4 +1,5 @@
 using System.Net.Http.Headers;
+using FluentAssertions;
 
 namespace Day5;
 
@@ -17,7 +18,11 @@ public class Tests
         var crane = new Crane();
         
         //Act
+        var completed = crane.DoMoves();
+        var result = crane.TopThreeCrates(completed);
+        
         //Assert
+        result.Should().Be("what is the answer?");
     }
 };
 
@@ -51,9 +56,9 @@ public class Crane
 
     public List<Stack<string>> ProcessMove(string move, List<Stack<string>> inputStacks = null)
     {
-        int quantity = Int32.Parse((string) move.Split("from")[0].Where(Char.IsDigit));
-        int from = Int32.Parse((string) move.Split("from")[1].Split("to")[0].Where(Char.IsDigit));
-        int to = Int32.Parse((string) move.Split("from")[1].Split("to")[1].Where(Char.IsDigit));
+        int quantity = Int32.Parse(move.Split("from")[0].Where(Char.IsDigit).ToArray());
+        int from = Int32.Parse(move.Split("from")[1].Split("to")[0].Where(Char.IsDigit).ToArray());
+        int to = Int32.Parse(move.Split("from")[1].Split("to")[1].Where(Char.IsDigit).ToArray());
 
         var stacks = inputStacks;
         if (stacks == null)
@@ -69,7 +74,33 @@ public class Crane
 
         return stacks;
     }
-    
-    //Add a method to iterate through only the lines of inout file tht are move lines
-    //Add a method to return the top item of each stack
+
+    public string[] GetMoves()
+    {
+        string day5InputPath = @"C:\AdventOfCode2022\Day5\OnlyTheMoves.txt";
+        return File.ReadAllText(day5InputPath).Split(Environment.NewLine);
+    }
+
+    public List<Stack<string>> DoMoves()
+    {
+        var moves = GetMoves();
+        var stacks = GetInitialCrateStack();
+        
+        foreach (var move in moves)
+        {
+            stacks = ProcessMove(move, stacks);
+        }
+
+        return stacks;
+    }
+
+    public string TopThreeCrates(List<Stack<string>> stacks)
+    {
+        var answer = String.Empty;
+        foreach (var stack in stacks)
+        {
+            answer += stack.Peek();
+        }
+        return answer;
+    }
 }
