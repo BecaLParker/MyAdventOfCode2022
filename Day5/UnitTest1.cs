@@ -22,7 +22,7 @@ public class Tests
         var result = crane.TopThreeCrates(completed);
         
         //Assert
-        result.Should().Be("what is the answer?");
+        result.Should().Be("WHTLRMZRC");
     }
 };
 
