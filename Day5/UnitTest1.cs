@@ -11,19 +11,21 @@ public class Tests
     }
 
     [Test]
-    public void CanIDoItWithoutWritingUnitTests()
+    
+    public void Part2()
     {
         //Arrange
         var testInput = "";
         var crane = new Crane();
         
         //Act
-        var completed = crane.DoMoves();
+        var completed = crane.DoMoves(true);
         var result = crane.TopThreeCrates(completed);
         
         //Assert
-        result.Should().Be("WHTLRMZRC");
+        result.Should().Be("GMPMLWNMG");
     }
+
 };
 
 public class Crane
@@ -74,6 +76,33 @@ public class Crane
 
         return stacks;
     }
+    
+    public List<Stack<string>> Part2ProcessMove(string move, List<Stack<string>> inputStacks = null)
+    {
+        int quantity = Int32.Parse(move.Split("from")[0].Where(Char.IsDigit).ToArray());
+        int from = Int32.Parse(move.Split("from")[1].Split("to")[0].Where(Char.IsDigit).ToArray());
+        int to = Int32.Parse(move.Split("from")[1].Split("to")[1].Where(Char.IsDigit).ToArray());
+
+        var stacks = inputStacks;
+        if (stacks == null)
+        {
+            stacks = GetInitialCrateStack();
+        }
+        
+        var tmp = new List<string>(quantity);
+        for (int i = 0; i < quantity; i++)
+        {
+            tmp.Add(stacks[from - 1].Pop());
+        }
+        tmp.Reverse();
+        foreach (var crate in tmp)
+        {
+            stacks[to - 1].Push(crate);
+        }
+
+        return stacks;
+    }
+
 
     public string[] GetMoves()
     {
@@ -81,14 +110,22 @@ public class Crane
         return File.ReadAllText(day5InputPath).Split(Environment.NewLine);
     }
 
-    public List<Stack<string>> DoMoves()
+    public List<Stack<string>> DoMoves(bool isPart2 = false)
     {
         var moves = GetMoves();
         var stacks = GetInitialCrateStack();
         
         foreach (var move in moves)
         {
-            stacks = ProcessMove(move, stacks);
+            if (isPart2)
+            {
+                stacks = Part2ProcessMove(move, stacks);
+
+            }
+            else
+            {
+                stacks = ProcessMove(move, stacks);
+            }
         }
 
         return stacks;
