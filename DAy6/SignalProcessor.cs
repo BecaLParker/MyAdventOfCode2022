@@ -2,7 +2,7 @@
 
 public class SignalProcessor
 {
-    public int FindStart(string signal)
+    public int FindMarker(string signal)
     {
         return 5;
     }

@@ -4,11 +4,6 @@ namespace DAy6;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [Test]
     [TestCase("bvwbjplbgvbhsrlpgdmjqwftvncz", 5)]
     public void FindStartShouldReturnStartPositionOfFirstMarkerInSignal(string signal, int expected)
@@ -17,7 +12,7 @@ public class Tests
         var processor = new SignalProcessor();
         
         //Act
-        var result = processor.FindStart(signal);
+        var result = processor.FindMarker(signal);
         
         //Assert
         result.Should().Be(expected);
