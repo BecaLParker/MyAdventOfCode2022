@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed679f43-a5ea-46f8-bcfb-43b57f2f9242" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/AdventOfCode2022/Day4/RangeCheckerTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/AdventOfCode2022/Day4/RangeChecker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/AdventOfCode2022/Day4/RangeCheckerTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/AdventOfCode2022/Day4/RangeChecker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c625622e213fe87ffe77796b96b18d65375f6ae9ca9caae6940d27142bc625f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IUOXXKklR1viloaunR43PESW1x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed679f43-a5ea-46f8-bcfb-43b57f2f9242" name="Changes" comment="" />
+      <created>1670232736131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670232736131</updated>
+      <workItem from="1670232746641" duration="3014000" />
+      <workItem from="1670268570667" duration="2061000" />
+    </task>
+    <task id="LOCAL-00001" summary="NonOverlappingPair returns false">
+      <created>1670232890273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670232890273</updated>
+    </task>
+    <task id="LOCAL-00002" summary="PartiallyOverlappingPair returns false">
+      <created>1670233023482</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670233023482</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FullyOverLappingPair">
+      <created>1670244275740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670244275740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add method that checks all pairs">
+      <created>1670269224805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670269224805</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Day3 first star">
+      <created>1670269547986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670269547986</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Day3Secondstar">
+      <created>1670270384531</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670270384531</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="NonOverlappingPair returns false" />
+    <MESSAGE value="PartiallyOverlappingPair returns false" />
+    <MESSAGE value="FullyOverLappingPair" />
+    <MESSAGE value="Add method that checks all pairs" />
+    <MESSAGE value="Day3 first star" />
+    <MESSAGE value="Day3Secondstar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day3Secondstar" />
+  </component>
+</project>
