@@ -5,21 +5,73 @@ namespace Day8;
 public class TreeCheckerTests
 {
     [Test]
-    public void CountOfVisible_TestGrid_ShouldBe21()
-    {
-        string testGrid = @"30373
+    [TestCase(@"30373
         25512
         65332
         33549
-        35390";
-        TreeChecker.CountOfVisible(testGrid).Should().Be(21);
+        35390", 21
+    )]
+    [TestCase(@"0000
+        0110
+        0110
+        0000", 16)]
+    public void CountOfVisible_TestGrids_ShouldBeCorrect(string grid, int expected)
+    {
+        TreeChecker.CountOfVisible(grid).Should().Be(expected);
     }
+    
+    [Test]
+    [TestCase(@"30373
+        25512
+        65332
+        33549
+        35390", 16
+    )]
+    [TestCase(@"0000
+        0110
+        0110
+        0000", 12)]
+
+    public void CountOfPerimeterTrees_TestGrid_ShouldBeCorrect(string grid, int expected)
+    {
+        TreeChecker.CountOfPerimeterTrees(grid).Should().Be(expected);
+    }
+
+    [Test]
+    [TestCase(@"30373
+        25512
+        65332
+        33549
+        35390", 5
+    )]
+    [TestCase(@"0000
+        0110
+        0110
+        0000", 4)]
+
+    public void CountOfInteriorTallTrees_TestGrids_ShouldBeCorrect(string grid, int expected)
+    {
+        TreeChecker.CountOfInteriorTallTrees(grid).Should().Be(expected);
+
+    }
+
 }
 
 public class TreeChecker
 {
     public static int CountOfVisible(string grid)
     {
-        return 21;
+        
+        return CountOfPerimeterTrees(grid) + CountOfInteriorTallTrees(grid);
+    }
+
+    public static int CountOfInteriorTallTrees(string grid)
+    {
+        return 5;
+    }
+
+    public static int CountOfPerimeterTrees(string grid)
+    {
+        return 16;
     }
 }
