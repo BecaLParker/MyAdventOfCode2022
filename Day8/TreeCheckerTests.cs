@@ -72,6 +72,8 @@ public class TreeChecker
 
     public static int CountOfPerimeterTrees(string grid)
     {
-        return 16;
+        var twoD = grid.Split(Environment.NewLine);
+        int innerTrees = (twoD.Count() - 2)*(twoD.Count() -2);
+        return twoD.Count()*twoD.Count()-innerTrees;
     }
 }
