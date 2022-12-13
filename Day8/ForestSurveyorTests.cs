@@ -1,3 +1,4 @@
+using FluentAssertions;
 namespace Day8;
 
 public class ForestSurveyorTests
@@ -8,6 +9,24 @@ public class ForestSurveyorTests
     }
 
     [Test]
+    public void CountOfVisibleTreesShouldReturnCorrectCount()
+    {
+        //Arrange
+        string testGrid = @"30373
+25512
+65332
+33549
+35390";
+        var surveyor = new ForestSurveyor();
+
+        //Act
+        var result = surveyor.CountOfVisibleTrees(testGrid);
+        
+        //Assert
+        result.Should().Be(21);
+    }
+
+    /*[Test]
     [TestCase(@"30373
 25512
 65332
@@ -27,5 +46,13 @@ public class ForestSurveyorTests
         
         //Assert
         result.Should().Be(expectedPerimeterCount);
+    }
+}*/
+
+public class ForestSurveyor
+{
+    public object CountOfVisibleTrees(string testGrid)
+    {
+        throw new NotImplementedException();
     }
 }
